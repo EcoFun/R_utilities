@@ -3,7 +3,7 @@
 # load other functions
 source("math_functions.R")
 
-plot.stats <- function(stats, colos, xlab, main='', xlim=NULL, pas=NULL, verbose=F){
+multi.hist <- function(stats, colos, xlab, main='', xlim=NULL, pas=NULL, verbose=F){
 	# stat:  a vector or a list of length 2 of numeric to be plotted
 	# colos: a vector of 1 or to colors. 
 	# xlab: x axis title
