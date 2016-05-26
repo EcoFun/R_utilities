@@ -6,9 +6,9 @@ rd_frac <- function(N, X=2){
     round(N*X)/X
 }
 
-vec <- 1:3000/1000
-vec_t <- rd_frac(vec, 2)
-plot(vec_t ~ vec)
+#~vec <- 1:3000/1000
+#~vec_t <- rd_frac(vec, 2)
+#~plot(vec_t ~ vec)
 
-vec_t2 <- rd_frac(vec, 10)
-plot(vec_t2 ~ vec)
+#~vec_t2 <- rd_frac(vec, 10)
+#~plot(vec_t2 ~ vec)
