@@ -1,3 +1,7 @@
+author = "Ludovic Duvaux"
+maintainer = "Ludovic Duvaux"
+license = "GPL_v3"
+
 makeTransparent<-function(someColor, alpha=100)
 {
     newColor<-col2rgb(someColor)

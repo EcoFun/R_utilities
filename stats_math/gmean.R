@@ -1,3 +1,7 @@
+author = "Ludovic Duvaux"
+maintainer = "Ludovic Duvaux"
+license = "GPL_v3"
+
 # function to compute geometric mean
 gmean <- function(x){
     # x: vector of values

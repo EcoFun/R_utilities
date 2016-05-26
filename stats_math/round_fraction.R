@@ -1,3 +1,8 @@
+author = "Ludovic Duvaux"
+maintainer = "Ludovic Duvaux"
+license = "GPL_v3"
+
+
 # round a value to the closest bound of 1 divided by X
 # for instance if X=2, the bounds are 0, 0.5, 1
 rd_frac <- function(N, X=2){

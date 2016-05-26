@@ -1,3 +1,7 @@
+author = "Ludovic Duvaux"
+maintainer = "Ludovic Duvaux"
+license = "GPL_v3"
+
 roundUp <- function(x){
     if (x >=0){
         res <- 10^ceiling(log10(x))
