@@ -1,7 +1,13 @@
 #R Plot Scipt CAP population statistic Polymorphorama
 
-# load other functions
-source("math_functions.R")
+author = "Ludovic Duvaux"
+maintainer = "Ludovic Duvaux"
+license = "GPL_v3"
+
+# dependendent on 'math_functions.R' for functions:
+    # roundDn
+    # roundUp
+    # -> source("math_functions.R")
 
 multi.hist <- function(stats, colos, xlab, main='', xlim=NULL, pas=NULL, verbose=F){
 	# stat:  a vector or a list of length 2 of numeric to be plotted
@@ -55,4 +61,4 @@ multi.hist <- function(stats, colos, xlab, main='', xlim=NULL, pas=NULL, verbose
             ylim=ylim, breaks=brk, add=T)}
 }
 
-#~plot.stats(stats=list(summarystatsCAM$SynSites, summarystatsCAM$RepSites), colos=c(rgb(1,0,0,0.5), rgb(0,0,1,0.5)), xlab='Wild population site')
+#~multi.hist(stats=list(summarystatsCAM$SynSites, summarystatsCAM$RepSites), colos=c(rgb(1,0,0,0.5), rgb(0,0,1,0.5)), xlab='Wild population site')
