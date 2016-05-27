@@ -7,7 +7,7 @@ license = "GPL_v3"
 # dependendent on 'math_functions.R' for functions:
     # roundDn
     # roundUp
-    # -> source("math_functions.R")
+    # -> source("round_functions.R")
 
 multi.hist <- function(stats, colos, xlab, main='', xlim=NULL, pas=NULL, verbose=F){
 	# stat:  a vector or a list of length 2 of numeric to be plotted
