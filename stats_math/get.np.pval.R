@@ -1,4 +1,4 @@
-get_pval <- function(obs, exp.dist, two_sided=F, greater=T){
+get.np.pval <- function(obs, exp.dist, two_sided=F, greater=T){
 # function to compute a p-value from an experimental distribution (to be provided)
 # obs: observed value of the statistics
 # exp.dist: experimental distribution of the statistics
@@ -12,7 +12,7 @@ get_pval <- function(obs, exp.dist, two_sided=F, greater=T){
     }
 
     pval <- prop)/length(exp.dist)
-    
+
     if (two_sided) {
         pval2 <- abs(1-pval)
         pval <- ifelse(pval<=pval2, pval, pval2)*2}
