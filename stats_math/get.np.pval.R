@@ -6,12 +6,12 @@ get.np.pval <- function(obs, exp.dist, two_sided=F, greater=T){
 # greater: if two_sided=F, H1 is obs is greater than expected.
 
     if ( greater | !two_sided ) {
-        prop <- 1-length(subset(exp.dist, obs >= exp.dist)
+        prop <- 1-length(subset(exp.dist, obs >= exp.dist))
     } else {
-        prop <- 1-length(subset(exp.dist, obs <= exp.dist)
+        prop <- 1-length(subset(exp.dist, obs <= exp.dist))
     }
 
-    pval <- prop)/length(exp.dist)
+    pval <- prop/length(exp.dist)
 
     if (two_sided) {
         pval2 <- abs(1-pval)
